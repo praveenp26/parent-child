@@ -7,14 +7,17 @@ import { Component, EventEmitter, Input } from '@angular/core';
   imports: [],
   templateUrl: './child-component.component.html',
   styleUrl: './child-component.component.css',
+  // inputs: ['pData', 'pData2'],
   inputs: ['pData'],
-  outputs: ['childEvent']
+ // outputs: ['childEvent']
 })
 export class ChildComponentComponent {
-childEvent = new EventEmitter();
-  sendData(val: any) {
-    this.childEvent.emit(val);
-}
- pData: any;
-
+  inputCollection: string[] = [];
+  // childEvent = new EventEmitter();
+  // sendData(val: any) {
+  //   this.childEvent.emit(val);
+  // }
+  pData: any;
+  // pData2: any;
+  
 }

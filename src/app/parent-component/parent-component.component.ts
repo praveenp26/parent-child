@@ -9,12 +9,18 @@ import { ChildComponentComponent } from '../child-component/child-component.comp
   styleUrl: './parent-component.component.css',
 })
 export class ParentComponentComponent {
+
   CData: any;
   pData: any;
+  pData2: any;
 //   getData(val: any) {
 //     this.CData = val;
 // }
 sendData(val: any) {
   this.pData = val;
 }
+  sendData2(val1: string,val2: string) {
+    this.pData = val1;
+    this.pData2 = val2;
+  }
 }

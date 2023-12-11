@@ -1,9 +1,21 @@
 <h1>Parent Component</h1>
-<form onsubmit="sendData(pData.value)" novalidate>
     {{CData}}
-    <br/>
-<input type="text" #pData/>
-<input type="Submit" value="send"/>
-</form>
+<br/>
+<!-- <input type="text" #pData/>
+<button value="send" (click)="sendData(pData.value)" >Send</button> -->
 <!-- <app-child-component [pData]="pData.value" (childEvent)="getData($event)"></app-child-component> -->
-<app-child-component [pData]="pData.value" (childEvent)="CData = $event"></app-child-component>
+<!-- <app-child-component [pData]="pData.value" (childEvent)="CData = $event"></app-child-component> -->
+
+<!-- <input type="checkbox" #pData/>
+<button value="send" (click)="sendData(pData.checked)" >Send</button> 
+<app-child-component [pData]="pData.checked"></app-child-component> -->
+
+<!-- <input type="text" #pData/>
+<input type="text" #pData2/>
+<button value="send" (click)="sendData2(pData.value, pData2.value)" >Send</button>
+<app-child-component [pData]="pData.value" [pData2]="pData2.value"></app-child-component> -->
+
+<input type="text" #pData/>
+<button value="send" (click)="sendData(pData.value)">Send</button>
+<app-child-component [pData]="pData.value"></app-child-component>
+
